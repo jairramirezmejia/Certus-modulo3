@@ -97,5 +97,4 @@ function primeNumber (number) {
   }
   return result6.innerText = `6) ${number} si es un número primo`;
 }
-
-primeNumber(1913);
+primeNumber(19);
