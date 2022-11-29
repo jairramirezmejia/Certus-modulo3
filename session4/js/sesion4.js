@@ -43,11 +43,11 @@ let expReg = /a/g;
 let arrayResult = word.match(expReg);
 result1.innerText = arrayResult + " Tamaño: " + arrayResult.length;
 
-let expReg = /@/g;
+expReg = /@/g;
 arrayResult = word.match(expReg);
 result1.innerText += "\n" + arrayResult + " Tamano: " + arrayResult.length;
 
-let expReg = /[a-z]/g;
+expReg = /[a-z]/g;
 arrayResult = word.match(expReg);
 result1.innerText += "\n" + arrayResult + " Tamaño: " + arrayResult.length;
 
