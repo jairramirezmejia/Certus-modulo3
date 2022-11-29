@@ -1,13 +1,11 @@
 // Caso Propuesto:
 // Una tienda pone a la venta varios juguetes, los precios por cada producto se indican en el siguiente cuadro:
 // Juguetes	Precio (S/.)
-
 // Monopolio	70.99
 // Ajedrez	78.99
 // Lego	100.99
 // Dama	58.50
 // Laberinto	35.00
-
 // La tienda realiza ofertas de acuerdo con la cantidad de juguetes que se compra, estos se indican en el siguiente cuadro:
 // Cantidad de juguetes	Descuento (%)
 // < 10	3.5
@@ -28,21 +26,24 @@
 
 // }
 
-count = 5
-price = 10
-if (count < 10) {
-    const discount = price*0.035
-    const totalToPay = price - discount
 
-  } else if (input <=20 ) {
-    const discount = price*0.07
-    const totalToPay = price - discount
-    
+
+const resultDiscount1 = document.getElementsByName("resultDiscount1");
+console.log(resultDiscount1);
+function discount(price = 0, count= 0) {
+  if (count < 10) {
+    let discount1 = price * count * 0.03;
+    return
+  } else if (count <=20 ) {
+
+    return price - discount;
   } else {
-    const discount = price*0.095
-    const totalToPay = price - discount
+    const discount = price*0.095;
+    return price - discount;
   }
+}
 
+discount (50, 1);
 
 // /* Ejercicio 2 */
 // const btn_promedio = document.getElementById('btn_promedio');
