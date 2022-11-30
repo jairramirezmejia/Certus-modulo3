@@ -23,16 +23,16 @@ function number(number) {
 
 
 // Caso Propuesto2:
-// Crear una función que valide una contraseña que cumpla las siguientes características, debe contener
-// minúsculas y al menos 1 mayúscula, debe tener al menos un signo especial: @ o el _ (guion bajo), además
-// debe contener al menos 1 digito numérico y debe tener como mínimo 10 caracteres.
-
-/[a-z][A-Z][@][_][0-9]
+// Crear una función que valide una contraseña que cumpla las siguientes características,
+// debe contener minúsculas y
+// al menos 1 mayúscula,
+// debe tener al menos un signo especial: @ o el _ (guion bajo), además
+// debe contener al menos 1 digito numérico y
+// debe tener como mínimo 10 caracteres.
 
 const result2 = document.getElementById("result2");
+let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{10,})")
 
-
-let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
 
 if(/\s/.test($scope.Password)){
     $scope.isValidPassword = false;
