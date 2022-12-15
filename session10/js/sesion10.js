@@ -34,10 +34,10 @@ console.log(example1.average());
 console.log(example1.condition());
 console.log(example1.present());
 
-const doc1 = document.getElementById("result1");
-const button = document.getElementById("button1");
-button.addEventListener("click", write);
+// const doc1 = document.getElementById("result1");
+// const button = document.getElementById("button1");
+// button.addEventListener("click", write);
 
-function write () {
-  doc1.innerText = "Hola";
-}
+// function write () {
+//   doc1.innerText = "Hola";
+// }
