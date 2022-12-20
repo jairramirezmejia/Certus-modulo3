@@ -12,7 +12,6 @@ let products = [
 ]
 
 //1. Crear una función que permita filtrar el arreglo de productos por cada atributo.
-
 function filterProductsBy(atribute, value) {
   const validAtributes = Object.keys (products[0])
   if (validAtributes.includes(atribute)) {
@@ -25,7 +24,6 @@ function filterProductsBy(atribute, value) {
 console.log(filterProductsBy("price", 1))
 
 //2. Crear una función que permita ordenar el arreglo de productos por cada atributo (en orden alfabetico).
-
 function ordenarProductosPorAtributo(atributo) {
   if (typeof products[0][atributo] === "string"){
     return products.sort((a,b) => {return a[atributo].localeCompare(b[atributo])})
@@ -37,9 +35,10 @@ function ordenarProductosPorAtributo(atributo) {
 }
 
 console.log(ordenarProductosPorAtributo("id"))
+
 //3. Crear una función que permita imprimir en pantalla los datos del objeto.
 
-    //El name, brand y type deben imprimirse en formato Capitalizado.
+//El name, brand y type deben imprimirse en formato Capitalizado.
 function capitalizar(string){
   return stringCapitalizado
 }
