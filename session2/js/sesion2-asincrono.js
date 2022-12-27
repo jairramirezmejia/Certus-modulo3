@@ -26,10 +26,12 @@
 
 // }
 
+let priceMonopolyHtml= document.getElementsByClassName('priceMonopoly');
+let priceMonopoly =parseInt(priceMonopolyHtml[0].innerText)
 
+let inputMonopoly = document.getElementsByClassName('inputMonopoly');
+let 
 
-const resultDiscount1 = document.getElementsByName("resultDiscount1");
-console.log(resultDiscount1);
 function discount(price = 0, count= 0) {
   if (count < 10) {
     let discount1 = price * count * 0.03;
@@ -43,7 +45,7 @@ function discount(price = 0, count= 0) {
   }
 }
 
-discount (50, 1);
+console.log(discount (50, 1));
 
 // /* Ejercicio 2 */
 // const btn_promedio = document.getElementById('btn_promedio');
