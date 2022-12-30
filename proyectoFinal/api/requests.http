@@ -12,13 +12,8 @@ Content-Type: application/json
 POST http://localhost:9000/api/users/login HTTP/1.1
 Content-Type: application/json
 
-{
-  "contraseña": "Levoemm1",
-  "correo": "lutari.ff@gmail.com"
-}
 
-
-//add favorite 
+//add favorite
 
 ###
 PUT http://localhost:9000/api/users/favorites/63aa8c0d4760dd949eb213c6 HTTP/1.1
