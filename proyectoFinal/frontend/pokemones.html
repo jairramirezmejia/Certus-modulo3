@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -23,42 +23,40 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <section class="container-fluid">
-            <a class="navbar-brand" href="#">POKEAPI</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <section class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 --bs-success-text">
                     <li class="nav-item">
-                        <a class="nav-link" href="pokemones.html">Pokemones</a>
+                        <a class="nav-link btn btn-link m-3" href="pokemones.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="favoritos.html">Favoritos</a>
+                        <a class="nav-link btn btn-link m-3" href="favoritos.html">Pokemones Favoritos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="perfil.html">Perfil</a>
+                        <a class="nav-link btn btn-link m-3" href="perfil.html">Mi perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cerrar sesión</a>
+                        <a class="nav-link btn btn-link m-3" href="sign.html">Cerrar sesión</a>
                     </li>
                 </ul>
             </section>
         </section>
     </nav>
-    <section style="margin-left: 1rem;">
-        <h2>Lista de favoritos</h2>
+    <section id="root" class="container">
     </section>
-    <main class="no-bs-grid bordered  m-5 ">
-
-        <!-- <section  style="display: flex; flex-flow: row wrap; justify-content: space-around;" class="card-container">
-            </section> -->
-
-    </main>
-    <script src="js/favoritos.js"></script>
+    <script src="js/pokemones.js"></script>
     <script src="js/logout.js"></script>
     <script>
-        getFavoritos(sessionStorage.login);
+        let pokemons;
+        const root = document.querySelector('#root');
+        let main = document.createElement('main');
+        main.className = 'no-bs-grid py-3';
+
+        let btnMorePokemons = document.createElement('button');
+        btnMorePokemons.className = 'form-control py-3';
+        getPokemonListPage();
     </script>
 </body>
-
 </html>

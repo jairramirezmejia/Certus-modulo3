@@ -24,8 +24,6 @@ function login(){
   .catch(error => console.error('Error:', error))
 }
 
-
-
 function intentarEnviar() {
   console.log("registro")
 
@@ -54,13 +52,7 @@ function intentarEnviar() {
     .catch(error => console.error('Error:', error))
 }
 
-
-
-
-  //getFavoritos("63aa8c0d4760dd949eb213c6")
-
-
-  function deletePok(favoritePk) {
+function deletePok(favoritePk) {
     //http://localhost:9000/api/users/favorites/63aa8c0d4760dd949eb213c6
     let data= {favorite: {name:favoritePk.name, peso: favoritePk.weight, altura: favoritePk.height, img: favoritePk.img}}
       fetch("http://localhost:9000/api/users/favorites/"+sessionStorage.login, {
@@ -74,6 +66,24 @@ function intentarEnviar() {
           console.log(data)
           alert('pokemon eliminado')
       });
-    }
+}
 
+$("#imgContrasena").click(function () {
 
+  let control = $(this);
+  let estatus = control.data('activo');
+
+  let icon = control.find('span');
+  if (estatus == false) {
+
+    control.data('activo', true);
+    $(icon).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+    $("#txtPassword").attr('type', 'text');
+  }
+  else {
+
+    control.data('activo', false);
+    $(icon).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+    $("#txtPassword").attr('type', 'password');
+  }
+});

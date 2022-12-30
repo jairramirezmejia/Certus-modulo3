@@ -1,17 +1,10 @@
-body {
-  background-image: linear-gradient(to right, #b24545, #fa4242);
-
-}
-
 main {
   background-color: white;
-
-  max-width: 30rem;
+  max-width: 32rem;
   margin: auto;
   margin-top: 2rem;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
 .titulo {

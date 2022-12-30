@@ -1,84 +1,16 @@
 /* https://css-tricks.com/intrinsically-responsive-css-grid-with-minmax-and-min/ */
 .no-bs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
   gap: 1rem;
 }
 
-.water {
-  --color: lightblue;
-}
-
-.fire {
-  --color: orange;
-}
-
-.electric {
-  --color: yellow;
-}
-
-.normal {
-  --color: coral;
-}
-
-.grass {
-  --color: yellowgreen;
-}
-
-.poison {
-  --color: plum;
-}
-
-.ground {
-  --color: peru;
-}
-
-.bug {
-  --color: rosybrown;
-}
-
-
-.psychic {
-  --color: royalblue;
-}
-
-.fighting {
-  --color: crimson;
-}
-
-.rock {
-  --color: gray;
-}
-
-.ghost {
-  --color: lightgray;
-}
-
-.ice {
-  --color: #24eeac;
-}
-
-.dragon {
-  --color: #2068f2;
-}
-
-.fairy {
-  --color: #ae51ee;
-}
-
 .card {
-  /* background-color: var(--color, black); */
-
-  background-image: radial-gradient(circle at center, white, var(--color, rgb(252, 217, 217)));
-  /* AQUI CAMBIE ,en favoritosahora el fondo es rosado */
-
-
+  background-image: radial-gradient(circle at center, white, var(--color, rgba(225, 247, 255, 0.315)));
 }
 
 .fav {
   background-image: radial-gradient(circle at center, white 40%, var(--color));
-  /* background-size: 150%; */
   background-position: center;
 }
 
@@ -89,7 +21,7 @@
   justify-content: center;
 }
 
-/* https://getcssscan.com/css-box-shadow-examples */
+
 .card {
   margin: 1rem !important;
   position: relative;
@@ -111,15 +43,9 @@
 }
 
 .btnStar {
-  position: absolute;
   background: black;
-  /* top: 1rem;
-  right: 1rem; ya no, porque tiene padding-3*/
-
   top: 0;
   right: 0;
-
-
   display: grid;
   place-items: center;
   outline: none;
