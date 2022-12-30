@@ -76,13 +76,9 @@ function eliminar() {
                 }
             });
     }
-
 }
 
 function editarClick() {
-
-
-    let fieldset = document.querySelector('fieldset');
-
-    fieldset.hasAttribute('disabled') ? fieldset.removeAttribute('disabled') : fieldset.setAttribute('disabled', '')
+  let fieldset = document.querySelector('fieldset');
+  fieldset.hasAttribute('disabled') ? fieldset.removeAttribute('disabled') : fieldset.setAttribute('disabled', '')
 }
